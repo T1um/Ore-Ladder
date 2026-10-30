@@ -1,7 +1,0 @@
-{
-  "required": true,
-  "package": "com.oreladder.mixin",
-  "compatibilityLevel": "JAVA_21",
-  "client": ["MinecraftClientMixin", "CreateWorldScreenMixin"],
-  "injectors": { "defaultRequire": 1 }
-}
