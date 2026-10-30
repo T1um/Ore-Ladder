@@ -1,0 +1,58 @@
+name: Bug report / Сообщить об ошибке
+description: Something doesn't work / Что-то работает не так
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping! The more details, the faster the fix. / Спасибо! Чем больше деталей, тем быстрее исправим.
+  - type: input
+    id: mod_version
+    attributes:
+      label: Ore Ladder version / Версия мода
+      placeholder: "1.0.0"
+    validations:
+      required: true
+  - type: input
+    id: versions
+    attributes:
+      label: Minecraft / Fabric Loader / Fabric API versions
+      placeholder: "1.21.1 / 0.16.5 / 0.102.0+1.21.1"
+    validations:
+      required: true
+  - type: dropdown
+    id: mode
+    attributes:
+      label: Difficulty / Сложность мода
+      options:
+        - Normal / Нормальный
+        - Very Extreme / Очень Экстримальный
+        - Not sure / Не знаю
+    validations:
+      required: true
+  - type: dropdown
+    id: where
+    attributes:
+      label: Where do you play / Где играешь
+      options:
+        - Singleplayer / Одиночная
+        - LAN
+        - Dedicated server / Сервер
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened? What did you expect? / Что случилось? Что ожидалось?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce / Как повторить
+      description: Which ore, which task, which restriction (see /ladder). / Какая руда, какое задание, какое ограничение (см. /ladder).
+  - type: textarea
+    id: log
+    attributes:
+      label: Log / Лог
+      description: |
+        Attach `logs/latest.log` (or `crash-reports/...`) from your .minecraft folder (drag the file here). If the game crashed, this is the most important part.
+        Прикрепи `logs/latest.log` (или файл из `crash-reports`) из папки .minecraft. Если игра вылетела, это самое важное.
