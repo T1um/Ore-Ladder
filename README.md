@@ -4,6 +4,7 @@ Requires / Нужно: Java 21 (build only), Minecraft 1.21.1, Fabric Loader 0.1
 The mod must be installed for ALL players (and on the server / LAN host). Мод нужен у ВСЕХ игроков и на сервере/хосте.
 ## Warning!/Предупреждение!
 This mod was written by an artificial intelligence (Claude), but the idea was conceived by the mod's author.
+Этот мод был написан искусственным интеллектом (Claude), но идея принадлежит автору мода.
 
 ## Build / Сборка (Windows PowerShell)
     .\gradlew.bat --stop
