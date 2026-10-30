@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "oreladder",
+  "version": "${version}",
+  "name": "Ore Ladder",
+  "description": "Ore Ladder: mine ores in order, complete random tasks, survive the Very Extreme mode. / Лестница руд: копай по порядку, выполняй случайные задания.",
+  "authors": ["YOUR_NAME"],
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["com.oreladder.OreLadder"],
+    "client": ["com.oreladder.OreLadderClient"]
+  },
+  "mixins": ["oreladder.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
